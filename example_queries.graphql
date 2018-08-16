@@ -1,0 +1,13 @@
+# Register user
+mutation {
+  registerUser(input: {username: "string", email: "string", password: "string"}) {
+    string
+  }
+}
+
+# Authenticate
+mutation {
+  authenticate(input: {email: "string", password: "string"}) {
+    jwtToken
+  }
+}
